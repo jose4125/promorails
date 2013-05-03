@@ -1,0 +1,14 @@
+<h1>login</h1>
+<%= form_for( :session, url: sessions_path ) do |f| %>
+    <div>
+        <%= f.label :nombre %>
+        <%= f.text_field :nombre %>
+    </div>
+    <div>
+        <%= f.label :cedula %>
+        <%= f.text_field :cedula %>
+    </div>
+    <div>
+        <%= f.submit 'login' %>
+    </div>
+<% end %>

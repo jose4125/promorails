@@ -2,6 +2,7 @@ Promorails::Application.routes.draw do
 
   resources :users
   resources :frases, only: [:new, :create]
+  resources :sessions, only: [:new, :create]
 
 
   # The priority is based upon order of creation:
@@ -54,6 +55,7 @@ Promorails::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
+   root :to => 'sessions#new'
 
   # See how all your routes lay out with "rake routes"
 
