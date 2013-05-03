@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: frases
+#
+#  id         :integer          not null, primary key
+#  user_id    :integer
+#  frase      :string(255)
+#  valida     :boolean
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  frase: MyString
+  valida: false
+
+two:
+  user: 
+  frase: MyString
+  valida: false

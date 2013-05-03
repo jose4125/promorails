@@ -1,0 +1,9 @@
+<h1>Frases</h1>
+<%= form_for(@frase) do |f| %>
+    <div>
+        <%= f.label :frase, "ingrese la frase"%>
+        <%= f.text_field :frase %>
+        <%= f.submit "enviar la frase" %>
+    </div>
+<% end %>
+

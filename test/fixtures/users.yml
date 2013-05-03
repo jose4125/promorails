@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id         :integer          not null, primary key
+#  nombre     :string(255)
+#  apellido   :string(255)
+#  cedula     :integer
+#  ciudad     :string(255)
+#  fan        :string(255)
+#  acepta_t   :boolean          default(FALSE)
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  apellido: MyString
+  cedula: 1
+  ciudad: MyString
+  fan: MyString
+  acepta_t: 
+
+two:
+  nombre: MyString
+  apellido: MyString
+  cedula: 1
+  ciudad: MyString
+  fan: MyString
+  acepta_t: 
