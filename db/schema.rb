@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130503030304) do
+ActiveRecord::Schema.define(:version => 20130504065341) do
 
   create_table "frases", :force => true do |t|
     t.integer  "user_id"

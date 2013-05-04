@@ -14,6 +14,8 @@
 #
 
 class User < ActiveRecord::Base
+  has_one :frase
+  
   attr_accessible :acepta_t, :apellido, :cedula, :ciudad, :fan, :nombre
 
   validates :nombre, :apellido, :cedula, :ciudad, :fan, presence: true

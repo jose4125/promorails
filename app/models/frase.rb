@@ -12,6 +12,7 @@
 
 class Frase < ActiveRecord::Base
   belongs_to :user
+
   attr_accessible :frase, :valida
 
   validates :frase, presence: true

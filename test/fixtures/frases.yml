@@ -13,11 +13,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  user: 
   frase: MyString
   valida: false
 
 two:
-  user: 
   frase: MyString
   valida: false

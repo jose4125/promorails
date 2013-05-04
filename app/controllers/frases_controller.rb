@@ -8,9 +8,14 @@ class FrasesController < ApplicationController
   end
 
   def create
-    #@frase = Frase.new(params[:frase]) 
+    
+    #este constructor funciona para has_many 
+    #@frase = current_user.build_frases(params[:frase])
 
-    @frase = current_user.frases.build(params[:frase]) 
+    #este constructor funciona para has_one
+    @user = current_user
+    @frase = Frase.create(params[:frase])
+    @user.frase = @frase
 
     respond_to do |format|
       if @frase.save
