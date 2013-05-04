@@ -8,7 +8,9 @@ class FrasesController < ApplicationController
   end
 
   def create
-    @frase = Frase.new(params[:frase]) 
+    #@frase = Frase.new(params[:frase]) 
+
+    @frase = current_user.frases.build(params[:frase]) 
 
     respond_to do |format|
       if @frase.save

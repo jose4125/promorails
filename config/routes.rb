@@ -1,7 +1,7 @@
 Promorails::Application.routes.draw do
 
   resources :users
-  resources :frases, only: [:new, :create]
+  resources :frases, exept: [:new]
   resources :sessions, only: [:new, :create]
 
   match '/registro', to: 'users#new'
