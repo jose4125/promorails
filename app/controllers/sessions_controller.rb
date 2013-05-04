@@ -4,7 +4,6 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by_cedula(params[:session][:cedula])
-    puts user.nombre
 
     if user && user.authenticate(params[:session][:cedula])
 
