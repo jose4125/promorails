@@ -1,3 +1,5 @@
+<%= link_to "logout (#{ current_user.nombre })", logout_path, method: 'delete' %>
+
 <h1>Frases</h1>
 <%= form_for(@frase) do |f| %>
     <div>

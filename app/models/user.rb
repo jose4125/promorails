@@ -19,4 +19,8 @@ class User < ActiveRecord::Base
   validates :nombre, :apellido, :cedula, :ciudad, :fan, presence: true
   validates :cedula, uniqueness: true
 
+  def authenticate( cedula )
+    pass = User.find_by_cedula( cedula )
+  end
+
 end
