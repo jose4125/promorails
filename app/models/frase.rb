@@ -13,7 +13,23 @@
 class Frase < ActiveRecord::Base
   belongs_to :user
 
+  after_create :frase_correcta
+
   attr_accessible :frase, :valida
 
   validates :frase, presence: true
+
+  private
+
+    def frase_correcta
+
+      frase_ingresada = self.frase
+      frase_correcta = 'hola mundo'
+
+      correcta = (frase_ingresada == frase_correcta) ? true : false
+      
+      self.update_attributes(valida: correcta)
+      self.save
+
+    end
 end

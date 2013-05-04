@@ -1,4 +1,5 @@
 class FrasesController < ApplicationController
+
   def new
     @frase = Frase.new
 
@@ -16,6 +17,11 @@ class FrasesController < ApplicationController
     @user = current_user
     @frase = Frase.create(params[:frase])
     @user.frase = @frase
+
+    #@frase.update_attributes(valida: false)
+    #@frase.save
+
+
 
     respond_to do |format|
       if @frase.save
