@@ -25,7 +25,7 @@ class FrasesController < ApplicationController
 
     respond_to do |format|
       if @frase.save
-        format.html { redirect_to root_url, notice: 'la frase fue ingresada' }
+        format.html { redirect_to new_frase_url, notice: 'la frase fue ingresada' }
       else
         format.html { render action: "new" }
       end
